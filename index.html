@@ -26,9 +26,29 @@
   /* SOCIAL STYLES */
   .social-link {
     background: rgba(150, 150, 150, 0.5);
+    border-radius: 99px;
+    box-sizing: border-box;
     color: blue;
     display: inline-block;
-    height: 36px;
+    font-family: helvetica, arial, sans;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.5em;
+    line-height: 1;
+    padding-top: 0.85em;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 2.5em;
+  }
+  .social-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  .social-list > li {
+    display: inline-block;
+    margin: 0 0.5em;
   }
 
   /* BIO STYLES */
@@ -37,11 +57,18 @@
     box-sizing: border-box;
     float: left;
     font-size: 1rem;
+    margin: 40px 1% 0;
     padding: 2%;
-    width: 25%;
+    width: 23%;
   }
   .bio-box h3 {
+    color: #000;
     font-size: 1.5em;
+    margin: -40px 0 1em;
+    text-align: center;
+  }
+  .bio-box img {
+    width: 100%;
   }
   .bio-copy {
     font-size: 1em;
@@ -51,6 +78,8 @@
   }
   .bio-wrapper {
     font-size: 24px;
+    margin: 0 auto 1em;
+    max-width: 960px;
     overflow: hidden;
   }
 
@@ -59,15 +88,15 @@
 <body>
   <div class="full-hero hero-home">
     <h1>I'm an h1</h1>
-    <ul>
+    <ul class="social-list">
       <li>
-        <a href="https://example.com/" class="social-link">Link</a>
+        <a href="https://example.com/" class="social-link">FB</a>
       </li>
       <li>
-        <a href="https://example.com/" class="social-link">Link</a>
+        <a href="https://example.com/" class="social-link">TW</a>
       </li>
       <li>
-        <a href="https://example.com/" class="social-link">Link</a>
+        <a href="https://example.com/" class="social-link">IG</a>
       </li>
     </ul>
   </div>
@@ -75,8 +104,9 @@
   <h2>I'm an h2</h2>
   <div class="bio-wrapper">
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>Michael Hartl</h3>
-      <a href="https://twitter.com/mhartl" class="social-link">here</a>
+      <a href="https://twitter.com/mhartl" class="social-link">TW</a>
       <div class="bio-copy">
         <p>
           Known for his dazzling charm, rapier wit, and unrivaled humility,
@@ -94,8 +124,9 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>Lee Donahoe</h3>
-      <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
+      <a href="https://twitter.com/leedonahoe" class="social-link">TW</a>
       <div class="bio-copy">
         <p>
           When he's not literally swimming with sharks or hunting powder stashes on
@@ -106,8 +137,9 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>Nick Merwin</h3>
-      <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+      <a href="https://twitter.com/nickmerwin" class="social-link">TW</a>
       <div class="bio-copy">
         <p>
           You may have seen him shredding guitar live with Capital Cities on Jimmy
@@ -118,10 +150,12 @@
       </div>
     </div>
     <div class="bio-box">
-      <h3>??</h3>
+      <img src="https://placekitten.com/g/400/400">
+      <h3>Ben Kiarie</h3>
+      <a href="https://twitter.com/lbenten" target="_blank" rel="noopener" class="social-link">TW</a>
       <div class="bio-copy">
         <p>
-          The Future
+          I am a nerd at heart who has always had a love for coding but has never had the opportunity to express my love for code. 2020 is the first year that I finally have a chance to become a developer and do what I love. The Learn Enough Platform is the first stepping stone to help me achieve that dream.
         </p>
       </div>
     </div>
@@ -131,7 +165,7 @@
     Learn Enough to Be Dangerous is a leader in the movement to teach the
     world <em>technical sophistication</em>, which includes both "hard
     skills" like coding, command lines, and version control, and "soft
-     skills" like guessing keyboard shortcuts, Googling error messages, and
+    skills" like guessing keyboard shortcuts, Googling error messages, and
     knowing when to just reboot the darn thing.
   </p>
   <p>
