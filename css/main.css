@@ -17,11 +17,18 @@ h2 ~ p {
   max-width: 70%;
   text-align: center;
 }
+html {
+  box-shadow: 0 0 0 10px #000 inset;
+  padding: 0 10px;
+}
 
 /* HEADER STYLES */
 .header {
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 .header-nav {
   float: right;
@@ -37,13 +44,15 @@ h2 ~ p {
 }
 .header-nav a {
   color: #fff;
+}
+.nav-links a {
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
-.header-nav a:hover,
-.header-nav a:active {
+.nav-links a:hover,
+.nav-links a:active {
   color: #ed6e2f;
 }
 .header-logo:hover,
@@ -61,6 +70,7 @@ h2 ~ p {
   box-sizing: border-box;
   display: block;
   height: 10vh;
+  left: -30px;
   padding-top: 10px;
   position: relative;
   text-align: center;
@@ -68,6 +78,31 @@ h2 ~ p {
 }
 .header-logo img {
   width: 4.3vh;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
 }
 
 /*HERO STYLES */
