@@ -1,7 +1,8 @@
 
 /* GLOBAL STYLES */
-a {
-  color: #c185ed;
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
 }
 body {
   font-family: helvetica, arial, sans;
@@ -10,16 +11,21 @@ h1 {
   font-size: 7vw;
   margin-top: 0;
 }
+h2 {
+  font-size: 2em;
+}
+a {
+  color: #6397b5;
+}
+p {
+  line-height: 1.5;
+}
 h2 ~ p {
   font-size: 0.8em;
   font-style: italic;
   margin: 1em auto 0;
   max-width: 70%;
   text-align: center;
-}
-html {
-  box-shadow: 0 0 0 10px #000 inset;
-  padding: 0 10px;
 }
 
 /* HEADER STYLES */
@@ -57,7 +63,7 @@ html {
 }
 .header-logo:hover,
 .header-logo:active {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .header-nav > li:first-child a {
   color: #ed6e2f;
@@ -86,6 +92,10 @@ html {
   padding: 10vh 0 15vh;
   text-align: center;
 }
+.footer .social-link {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #6397b5;
+}
 .footer-logo img {
   width: 50px;
 }
@@ -104,19 +114,64 @@ html {
 .footer-nav a {
   color: #ccc;
 }
+.footer-socials {
+  margin-top: 1em;
+}
+.footer-socials > li + li {
+  padding-left: 3em;
+}
 
 /*HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.full-hero:after {
+  bottom: 2vh;
+  border: 10px solid;
+  border-color: #fff transparent transparent;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 0;
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: 40% center;
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 60%;
+  transform: translate(0, -60%);
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #557c83;
+}
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /* SOCIAL STYLES */
 .social-link {
-  background: rgba(150, 150, 150, 0.5);
+  background-color: #000;
   border-radius: 99px;
   box-sizing: border-box;
-  color: blue;
+  color: #fff;
   display: inline-block;
   font-family: helvetica, arial, sans;
   font-size: 1rem;
@@ -131,7 +186,8 @@ html {
 }
 .social-link:active,
 .social-link:hover {
-  background-color: #E8CD54;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #6397b5;
 }
 .social-list {
   list-style: none;
@@ -143,15 +199,38 @@ html {
   margin: 0 0.5em;
 }
 
+/*HOMEPAGE STYLES */
+.home-section {
+  margin: 6rem auto;
+  max-width: 980px;
+  width: 90vw;
+}
+.home-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.home-callout {
+  background-color: #000;
+  color: #fff;
+  padding: 7vh 0;
+}
+.callout-title {
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+}
+.callout-copy {
+  font-size: 0.8rem;
+}
+
 /* BIO STYLES */
 .bio-box {
-  border: 1px solid black;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 40px 1% 0;
-  padding: 2%;
-  width: 23%;
+  margin: 6rem 0 0;
+  padding: 0 3%;
+  width: 33%;
 }
 .bio-box h3 {
   color: #fff;
@@ -164,14 +243,10 @@ html {
 }
 .bio-box .social-link {
   display: block;
-  margin: 2em 0 1em
+  margin: 2em auto 1em
 }
 .bio-copy {
-  font-size: 1em;
-  line-height: 1.5;
-}
-.bio-copy a {
-  color: green;
+  font-size: 0.75em;
 }
 .bio-wrapper {
   font-size: 24px;
