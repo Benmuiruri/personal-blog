@@ -5,7 +5,15 @@ html {
   padding: 0 30px;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: helvetica, arial, sans;
+}
+.content-container {
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;
 }
 h1 {
   font-size: 7vw;
@@ -19,6 +27,7 @@ a {
 }
 p {
   line-height: 1.5;
+  margin: 0.75em 0;
 }
 h2 ~ p {
   font-size: 0.8em;
@@ -83,7 +92,8 @@ h2 ~ p {
   width: 10vh;
 }
 .header-logo img {
-  width: 4.3vh;
+  height: 80%;
+  width: auto;
 }
 
 /* FOOTER STYLES */
@@ -121,13 +131,34 @@ h2 ~ p {
   padding-left: 3em;
 }
 
+/* COLUMN STYLES */
+.col-three {
+  display: flex;
+  background-color: green;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em;
+}
+
 /*HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   background-size: cover;
   box-sizing: border-box;
-  height: 100vh;
-  padding-top: 10vh;
+  height: 90vh;
 }
 .full-hero:after {
   bottom: 2vh;
@@ -142,15 +173,15 @@ h2 ~ p {
 }
 .hero-home {
   background-image: url(/images/shark.jpg);
-  background-position: 40% center;
+  background-position: center top;
 }
 .hero-content {
   color: #fff;
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  top: 60%;
-  transform: translate(0, -60%);
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .hero-content h1 {
   color: rgba(255, 255, 255, 0.7);
@@ -210,16 +241,25 @@ h2 ~ p {
   text-align: center;
 }
 .home-callout {
+  display: flex;
+  align-items: center;
   background-color: #000;
   color: #fff;
   padding: 7vh 0;
 }
+.home-callout h3 {
+  color: inherit;
+  margin-top: 1.5em;
+}
 .callout-title {
+  flex: 1;
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
 }
 .callout-copy {
+  flex: 0 0 45em;
+  padding: 0 3vw;
   font-size: 0.8rem;
 }
 
@@ -233,7 +273,7 @@ h2 ~ p {
   width: 33%;
 }
 .bio-box h3 {
-  color: #fff;
+  color: #000;
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
