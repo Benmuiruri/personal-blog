@@ -524,7 +524,7 @@ h2 ~ p {
   .gallery-thumbs > div {
     display: inline-block;
   }
-  .galley-thumbs img {
+  .gallery-thumbs img {
     height: 7vh;
     margin: 0 10px 0 0;
     width: auto;
@@ -537,10 +537,28 @@ h2 ~ p {
   .blog-cols {
     flex-direction: column;
   }
+  .blog-posts .post-header {
+    font-size: 0.6rem;
+  }
   .col-two .col-aside {
     flex: 1;
     order: 0;
     padding: 1em;
+    font-size: 0.7rem;
     text-align: center;
+  }
+  .page h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .post-aside {
+    display: none;
+  }
+  .post-byline span {
+    font-size: 0.8em;
+  }
+  .post-content {
+    font-size: 1rem;
   }
 }

@@ -4,8 +4,7 @@
     <div class="post-byline">
       <img src="{{ post.gravatar }}">
       <a href="{{ post.authorTwitter }}"class="social-link">Tw</a>
-      by: {{ post.first.author }}
-      <span> - {{ post.date | date: '%B %d %Y'}}</span>
+      <span>by: {{ post.first.author }} - {{ post.date | date: '%B %d %Y'}}</span>
     </div>
   </header>
 
