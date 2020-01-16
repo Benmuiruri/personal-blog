@@ -561,4 +561,8 @@ h2 ~ p {
   .post-content {
     font-size: 1rem;
   }
+  .pull-left {
+    float: left;
+    margin: 2em 2em 2em 2em;
+  }
 }
