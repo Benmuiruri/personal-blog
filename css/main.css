@@ -562,7 +562,8 @@ h2 ~ p {
     font-size: 1rem;
   }
   .pull-left {
-    float: left;
-    margin: 2em 2em 2em 2em;
+    width: 100%;
+    float: none;
+    margin: 1em;
   }
 }
