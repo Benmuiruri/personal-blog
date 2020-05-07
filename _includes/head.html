@@ -1,15 +1,15 @@
 <head>
   {% if page.title %}
-    <title> {{ page.title }} | Dangerous Coder</title>
-    <meta property="og:title" content="{{ page.title }} | Dangerous Coder">
+  <title> {{ page.title }} | Dangerous Coder</title>
+  <meta property="og:title" content="{{ page.title }} | Dangerous Coder">
   {% else %}
-    <title>Dangerous Coder</title>
-    <meta property="og:title" content="Dangerous Coder">
+  <title>Dangerous Coder</title>
+  <meta property="og:title" content="Dangerous Coder">
   {% endif %}
   {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
+  <meta name="description" content="{{ page.description }}">
   {% else %}
-    <meta name="description" content="This is a dagengerous coder's site.">
+  <meta name="description" content="This is a dagengerous coder's site.">
   {% endif %}
   <link href="/favicon.png" rel="icon">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -25,4 +25,14 @@
       activateGallery();
     });
   </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165837783-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165837783-1');
+  </script>
+
 </head>
