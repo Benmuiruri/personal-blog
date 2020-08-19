@@ -1,11 +1,11 @@
 ---
 layout: post
-title: This is the title of first post
+title: This is my first blog post
 postHero: /images/shark.jpg
 author: Ben Kiarie
 authorTwitter: https://twitter.com/lbenten
 gravatar: https://gravatar.com/avatar/f9dfb2ef21f0a07ac11213bd13de8383?s=150
-postFooter: Additional information, and maybe a <a href="#">link or two</a>
+postFooter: Additional information about the article</a>
 ---
 
 Call me *Ishmael*. Some years ago–*never mind how long
@@ -30,3 +30,5 @@ With a philosophical flourish Cato throws himself upon
 his sword; I quietly take to the ship. There is nothing surprising in this.
 If they but knew it, almost all men in their degree, some time or other,
 cherish very nearly the same feelings towards the ocean with me.
+
+"The above is a very interesting poem by Shakespeare, hope you enjoyed reading"
