@@ -450,7 +450,7 @@ h2 ~ p {
   cursor: pointer;
 }
 .gallery-thumbs img {
-  box-sizing: border-box`;
+  box-sizing: border-box;
   box-shadow: 0 0 0 5px transparent;
   display: inline-block;
   margin: 0 0 10px;
